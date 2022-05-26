@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework №1</title>
+</head>
+<body>
+    <h1>Перелік основних команд:</h1>
+    <div>
+        <li>git config --global user.name blabla - These values set what name commits will be from on a local computer.</li>
+        <li>git config --global user.email blabal@bla - These values set what email address commits will be from on a local computer.</li>
+        <li>git init - This command turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.</li>
+        <li>git status - This command returns the current state of the repository.</li>
+        <li>git add - Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.</li>
+        <li>git commit - Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.</li>
+        <li>git log - To show the chronological commit history for a repository. This helps give context and history for a repository. git log is available immediately on a recently cloned repository to see history.</li>
+        <li>git checkout - To start working in a different branch, use git checkout to switch branches.</li>
+        <li>git branch - To determine what branch the local repository is on, add a new branch, or delete a branch.</li>
+        <li>git push - Sends local commits to the remote repository. git push requires two parameters: the remote repository and the branch that the push is for.</li>
+        <li>git pull - To get the latest version of a repository run git pull. This pulls the changes from the remote repository to the local computer.</li>
+        <li>git merge - Integrate branches together. git merge combines the changes from one branch to another branch. For example, merge the changes made in a staging branch into the stable branch.</li>
+        <li>git clone - To create a local working copy of an existing remote repository, use git clone to copy and download the repository to a computer. Cloning is the equivalent of git init when working with a remote repository. Git will create a directory locally with all files and repository history.</li>
+        <li>.gitignore - gitignore file is a text file that tells Git which files or folders to ignore in a project. A local . gitignore file is usually placed in the root directory of a project. You can also create a global . gitignore file and any entries in that file will be ignored in all of your Git repositories.</li>
+    </div>
+
+    <h2>Advanced</h2>
+
+    <div>
+        <li>git revert - The git revert command is used for undoing changes to a repository's commit history. Other 'undo' commands like, git checkout and git reset , move the HEAD and branch ref pointers to a specified commit. Git revert also takes a specified commit, however, git revert does not move ref pointers to this commit.</li>
+        <li>git reset - Is a powerful command that is used to undo local changes to the state of a Git repo. Git reset operates on "The Three Trees of Git". These trees are the Commit History ( HEAD ), the Staging Index, and the Working Directory.</li>
+        <li>git rebase - Rebasing is a process to reapply commits on top of another base trip. It is used to apply a sequence of commits from distinct branches into a final commit. It is an alternative of git merge command. It is a linear process of merging.</li>
+        <li>git cherry-pick - Cherry picking is the act of picking a commit from a branch and applying it to another. git cherry-pick can be useful for undoing changes. For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and cherry-pick the commit to where it should belong.</li>
+        <li>git stash - Temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.</li>
+    </div>
+</body>
+</html>
