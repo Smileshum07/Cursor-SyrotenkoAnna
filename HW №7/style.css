@@ -627,7 +627,7 @@ h3 {
     height: 451px;
     background: #FFFFFF;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px 5px hsla(0, 18%, 91%, 0.87);
+    filter: drop-shadow(0px -5px 20px rgba(41, 41, 42, 0.2));
     display: grid;
     grid-template-rows: repeat(4,1fr);
     grid-template-columns: repeat(3.1fr);
