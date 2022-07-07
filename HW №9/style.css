@@ -7,7 +7,7 @@ body {
 .wrapper {
     min-width: 100%;
     height: auto;
-    margin: 0px;
+    margin: 0px auto;
     font-family: "Lato";
     font-size: 14px;
     font-style: normal;
@@ -15,16 +15,12 @@ body {
     border: 0px;
     display: flex;
     flex-direction: column;
-    }
-
-
+}
 
 header {
     width: 100%;
     max-height: 665px;
     display: block;
-    
-    
 }
 .header-conteiner {
     width: 100%;
@@ -38,7 +34,6 @@ header {
 
 .logo {
     margin-bottom: 133px;
-
 }
 
 
@@ -49,7 +44,7 @@ header {
     line-height: 48px;
     letter-spacing: 0.03em;
     color: #333333;
-    margin: 0px;
+    
  }
 
  .header-main p {
@@ -61,13 +56,13 @@ header {
     margin-top: 30px;
     margin-bottom: 50px;
     margin-right: 0px;
-    padding: 0px;
- }
+    margin-left: 0px;
+}
 
  .header-main {
     padding: 0px;
-    margin: 0px;
- }
+    margin: 0px auto;
+}
 
 .button-App {
     width: 156px;
@@ -77,7 +72,6 @@ header {
     background: url(./img/Apple\ Store.svg) no-repeat;
     padding: 0px;
     margin-right: 35.9px;
-
 }
 
 .button-Google {
@@ -111,6 +105,7 @@ main {
     background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.7) url(./img/background\ main\ head.png) no-repeat;
     background-size: 805px 590px;
 }
+
 .imges-conteiner {
     width: 466px;
     height: 405px;
@@ -187,7 +182,6 @@ main {
     height: 716px;
     background: url(./img/midle\ img.png) no-repeat;
     background-position: cover;
-  
 }
 
 .midle-content {
@@ -223,7 +217,6 @@ main {
     font-size: 16px;
     line-height: 23px;
     color: #4F4F4F;
-    
 }
 
 .midle-content-p {
@@ -271,9 +264,6 @@ main {
     color: #FFFFFF;
 }
 
-.features-grid-svg {
-
-}
 
 .slider {
     max-width: 1450px;
@@ -306,9 +296,6 @@ main {
     padding: 0px;
     position: relative;
     left: -170px;
-    
-    
-    
 }
 
 .slide1, .slide2, .slide3, .slide4, .slide5 {
@@ -335,17 +322,14 @@ main {
     color: #4F4F4F;
     margin-left: 17px;
     margin-right: 13px;
-    
 }
 
 .slide1 {
     -webkit-mask: -webkit-gradient( linear, right  0%, left 0%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)) );
-
 }
 
 .slide5  {
     -webkit-mask: -webkit-gradient( linear, left 0%, right 0%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)) );
-    
 }
 
 
@@ -357,7 +341,6 @@ main {
     left: 270px;
     right: -270px;
     top: 55px;
-   
 }
 
 .svg-slide {
@@ -411,7 +394,6 @@ main {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    
 }        
 
 
@@ -422,7 +404,6 @@ main {
     background-size: contain;
     margin-top: 0px;
     box-sizing: border-box;
-
 }
 
 .info-conteiner {
@@ -457,7 +438,6 @@ footer {
     height: auto;
     margin: 0px;
     padding: 0px;
-    
 }
 
 
@@ -484,7 +464,6 @@ footer {
 
 .nav {
    width: 248px;
-    
 }
 
 .nav ul {
@@ -511,9 +490,6 @@ footer {
     grid-template-columns: repeat(3, 25px);
     gap: 17px;
     grid-column: 3/4;
-    
-
-
 }
 
 
@@ -547,26 +523,35 @@ footer {
         justify-content: center;
         text-align: center;
         background: #F4F6F9;
-        
-        
     }
 
    .logo {
        margin-bottom: 86px;
-
-   }
+    }
 
    .header-main-buttons {
     padding-bottom: 0px;
    }
 
    .header-main {
-    margin: 0px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
    }
+
    .header-main h1 {
-    margin-right: 0px;
+    margin: 0px auto;
     padding-right: 0px;
    }
+
+   .header-main p {
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+
 
     .main-head-conteiner {
         width: 100%;
@@ -587,15 +572,15 @@ footer {
         text-align: center;
         justify-content: center;
         padding-left: 20px;
-       
-        }
+    }
 
     .content h3 {
         margin-top: 0px;
     } 
 
     .content p {
-        margin-right: 0px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .content a {
         margin-bottom: 0px;
@@ -607,7 +592,6 @@ footer {
         width: 100%;
         max-height: 360px;
         background-position: center;
-          
     }
 
     #picture {
@@ -635,8 +619,9 @@ footer {
     display: block;
     justify-content: center;
     text-align: center;
-    
-   }
+    padding-left: 20px;
+    padding-right: 20px;
+    }
 
     .midle-content h3 {
         padding: 0px;
@@ -645,14 +630,17 @@ footer {
 
     .midle-content * {
         margin-left: 20px;
-        
     }
     .midle-content p {
         margin-top: 0px;
         margin-bottom: 25px;
+        margin-right: auto;
+        margin-left: auto;
     }
         .midle-content-p {
         margin-top: 0px;
+        margin-right: auto;
+        margin-left: auto;    
     }
 
     .features {
@@ -728,6 +716,7 @@ footer {
     .grid-icons {
         gap: 39px;
     }
+
     .info {
         width: 100%;
         max-width: 720px;
@@ -735,6 +724,7 @@ footer {
         min-height: 696px;
         background-position: 0px 430px;
     }
+
     .info-conteiner {
         left: 0px;
         top: 10px;
@@ -746,7 +736,10 @@ footer {
 
     .header-info p {
         margin-bottom: 70px;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .button-App {
         margin-right: 5px;
     }
@@ -756,8 +749,8 @@ footer {
         min-width: 360px;
         max-height: 210px;
         width: 100%;
-        
     }
+
     .footer-conteiner {
         max-height: 160px;
         padding: 43px 240px 45px 21px;
@@ -765,7 +758,6 @@ footer {
         display: flex;
         position: relative;
         flex-wrap: wrap;
-
     }
 
     .logo-footer {
@@ -792,120 +784,3 @@ footer {
 
 }
 
-/*@media screen and (max-width: 1315px) {
-   body {
-    max-width: none;
-   } 
-
-   .header-conteiner {
-    padding-left: 100px;
-   }
-
-   .logo-footer {
-    margin-right: 0px;
-    margin-left: 50px;
-   }
-   .nav ul {
-    padding: 0px;
-    margin-left: 70px;
-   }
-   .svg-grid {
-    left: 70px;
-
-   }
-
-   .info {
-    width: 1000px;
-   }
-   .header-info .button-App {
-    margin-top: 120px;
-   }
-   .header-info {
-    margin-left: 550px;
-    padding-top: 5px;
-   }
- 
-   .main-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    background-attachment: fixed;
-   }
-}
-
-
-
-@media screen and (max-width: 960px) {
-    
-    .header-main {
-        color: rgb(157, 71, 40);
-    }
-    
-    .logo-footer {
-        margin-top: 21px
-       }
-    .nav ul {
-        margin-left: 10px;
-       }
-       .svg-grid {
-        left: 30px;
-   }
-
-  
-  
-    
-}
-
-
-
-@media screen and (max-width: 720px, min-width: 360px) {
-  
-    header {
-        max-width: none;
-        height: 525px;
-        background: fixed;
-        text-align: center;
-        align-content: center;
-        justify-content: center;
-        padding-top: 32px;
-
-    }
-
-    .logo {
-        margin: 0px;
-        text-align: center;
-       
-    }
-
-    .header-main {
-       margin-left: 20px;
-    }
-
-    .header-main h1 {
-        width: 320px;
-        height: 119px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 40px;
-        letter-spacing: 0.03em;
-        text-align: center;
-        margin: 0px;
-     
-    }
-
-    footer {
-        max-height: 260px;
-        flex-direction: column;
-        background: fixed;
-    }
-
-    .logo-footer {
-        margin-top: 15px
-       }
-    .nav ul {
-        margin-left: 10px;
-       }
-    .svg-grid {
-        left: 30px;
-   }
-
-    }
