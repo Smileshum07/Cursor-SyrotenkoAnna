@@ -1,0 +1,111 @@
+
+body * {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+input {
+    max-width: 216px;
+    min-width: 140px;
+    height: 29px;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.main_wrapper {
+    max-width: 942px;
+}
+
+.elips {
+    max-width: 180px;
+}
+
+
+
+
+h1 {
+    max-width: 68px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+}
+.main_btn {
+    max-width: 97px;
+    height: 29px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    background: #4094EF;
+    border-radius: 3px;
+}
+
+.btn-secondary {
+    max-width: 33px;
+    height: 29px;
+    background: #4094EF;
+    border-radius: 3px;
+}
+
+
+
+.posts {
+    line-height: 21px;
+}
+span {
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.avatar {
+    max-width: 80px;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.link {
+    text-decoration: none;
+    color: #133768;
+}
+
+.name {
+    justify-content: end;
+    text-align: end;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+.row_gallery {
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.button_gallery {
+    max-width: 220px;
+    justify-content: center;
+    text-align: center;
+    background: none;
+    border-bottom: none;
+}
+
+#posts {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #262626;
+    background: white;
+}
+
+#tagged {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8F8F8F;
+    background: white;
+}
