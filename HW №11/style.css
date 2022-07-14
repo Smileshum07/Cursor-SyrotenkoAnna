@@ -99,7 +99,7 @@ h2 {
     font-size: 12px;
     line-height: 15px;
     color: #262626;
-    background: white;
+    border-top-left-radius: 0px solid black;
 }
 
 #tagged {

@@ -1,0 +1,11 @@
+body {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.nav-header .ul li a {
+  color: #505F98;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}/*# sourceMappingURL=styles.css.map */

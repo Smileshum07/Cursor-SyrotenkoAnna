@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+
+%main-header {
+    color: #505F98;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@mixin style ($color,$font-weight,$font-size,$line-height) {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+.header_nav {
+    .ul {
+         li{
+            a {
+                @extend %nav-header
+               
+            }
+         }
+    }
+}
+

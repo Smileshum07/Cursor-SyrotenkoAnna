@@ -92,9 +92,9 @@ main {
 }
 
 .main-head-conteiner {
-    display: flex;
-    max-height: 590px;
-    padding-right: 217px;
+    display: flex; 
+     
+    
 }
 
 
@@ -134,9 +134,11 @@ main {
     
 }
 .content {
+    max-width: auto;
     max-height: 590px;
     display: block;
     position: relative;
+    
 }
 
 .content h3 {
@@ -610,17 +612,17 @@ footer {
   
     .midle {
         min-height: 950px;
-        background-position: -668px 360px;
+        background-position: -600px 360px;
         background-size: 1200px 600px;
     }
   
    .midle-content {
-    min-height: 950px;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+        min-height: 950px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .midle-content h3 {
