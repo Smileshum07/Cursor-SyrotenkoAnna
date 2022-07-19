@@ -1,0 +1,368 @@
+
+$mainPadding: 165px;
+$borderRadiusBtn: 2px;
+
+//colors
+
+$headerColor: #505F98;
+$logoColor: #37447E;
+$btnBackgroundColor: #111B47;
+$btnColor: #FFFFFF;
+$hColor:  #091133;
+$mainColor: #6F7CB2;
+$mainItemsColor:#5D6970;
+$footerNavColor:  #929ECC;
+$footerBacgroundColor: #E7ECFF;
+$footerIconsColor: #B0B8BC;
+
+
+
+
+
+
+@mixin style ($color,$font-weight,$font-size,$line-height) {
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    
+}
+
+.wrapper {
+    padding: 18px $mainPadding 32px $mainPadding;
+}
+
+//header
+
+.header {
+    width: 100%;
+    max-height: 1110px;
+    
+}
+
+
+.nav_items {
+    
+    li{
+        z-index: 2;
+        list-style-type: none;
+         a {
+            text-decoration: none;
+            color: $headerColor;   
+        }
+    }
+}
+
+.logo {
+    @include style ($logoColor, 900, 26px, 38px);
+    z-index: 4;
+}
+
+
+.btn {
+    max-width: 160px;
+    height: 26px;
+    border-radius: $borderRadiusBtn;
+    background: #111B47;
+    @include style ($btnColor, 500, 12px, 18px);
+    z-index: 2;
+}
+
+.header_content {
+    position: relative;
+    
+}
+
+.header_content_main {
+    max-width: 539px;
+    max-height: 1060px;
+    margin-top: 261px;
+    z-index: 2;
+}
+
+.h1 {
+    @include style ($hColor, 500, 50px, 66px);
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+
+.header_content_text {
+    @include style ($headerColor, 400, 18px, 30px);
+    margin-bottom: 49px;
+}
+
+.btn_header_content_main,  .btn_header_content {
+    max-width: 189px;
+    height: 36px;
+    @include style ($btnColor, 500, 16px, 26px);
+}
+
+.btn_header_content {
+    color: $hColor;
+    background: none;
+    border: 2px solid $hColor;
+    
+    
+}
+
+.header_content_img {
+    width: 85%;
+    position: absolute;
+    top: -65px;
+    right: -165px;
+    
+}
+
+
+//main
+
+main {
+    margin-top: 200px;
+    
+}
+
+
+.main_head_text {
+    max-width: 580px;
+    h2 {
+        margin-top: 160px;
+    }
+}    
+.main_text {
+    @include style ($mainColor, 400, 16px, 26px);
+    margin-bottom: 80px
+    }
+
+ h2 {
+    @include style ($hColor, 500, 36px, 48px);
+ }
+
+
+.main_head_img {
+    margin-top: 110px;
+}
+
+.main_head_icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 14px;
+}
+
+
+.main_head_info {
+    h3 {
+        @include style ($hColor, 500, 16px, 26px);
+    }
+    p {
+        @include style ($mainItemsColor, 400, 12px, 18px);
+    }
+}
+
+
+.btn_main {
+    width: 150px;
+    height: 32px;
+    margin-top: 40px;
+}
+
+//footer
+
+footer {
+    
+    
+    .footer_main {
+        background: url(../img/footer\ background-min.svg);
+        
+        h2 {
+            margin-top: 135px;
+        }
+
+        .main_text {
+            max-width: 600px;
+            margin-bottom: 35px;
+        }
+        .price {
+            @include style (#222F65, 500, 50px, 66px);
+            margin: 0px;
+        }
+        .main_text_price {
+            @include style (#37447E, 400, 16px, 26px);
+        }
+        .main_text_price2 {
+            @include style (#5D6970, 400, 14px, 24px);
+            margin: 60px auto 10px auto;
+        }
+
+        .footer_btn {
+            margin-bottom: 175px;
+        }
+    
+    }
+
+
+    .footer_nav {
+        background: $footerBacgroundColor;
+        padding: 68px $mainPadding 32px $mainPadding;
+
+        .footer_nav_copy {
+            padding-bottom: 40px;
+            border-bottom: 1px solid #CDD1D4;
+            p {
+                @include style (#939EA4, 500, 14px, 24px);
+            }
+
+            .footer_nav_button {
+                width: 109px;
+                height: 26px;
+            }
+        }
+
+        .footer_nav_menu {
+            padding-top: 20px;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            .footer_nav {
+                a {
+                    @include style (#929ECC, 400, 14px, 24px);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    main {
+            margin-top: 20px;
+            padding-top: 0px;
+
+            .main_head {
+                    padding-bottom: 10px;
+
+                    .main_head_text {
+                        max-width: 100%;
+                        margin-top: 0px;
+                        padding-top: 0px;
+                            h2 {
+                                margin-top: 50px;
+                            }
+                            .main_text {
+                                margin-bottom: 30px
+                            }
+                        }
+                    
+            }
+
+            .main_content_card_img {
+                    max-width: 100%;
+                    align-items: center;
+            
+            }
+
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    
+    .header_content_main {
+        max-width: 100%;
+        margin: 50px 0px 10px auto;
+
+        h1 {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        .header_content_text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .header_content_img {
+        width: 0px;
+        display: none;
+    }
+
+    .main_content {
+        margin-bottom: 5px;
+    }
+
+    .main_head_img {
+        display: none;
+    
+   }
+   
+    
+        footer {
+            .footer_main {
+            
+                    padding-top: 0px;
+                    margin-top: 0px;
+            
+                    h2 {
+                        margin-top: 10px;
+                    }
+            
+                    .footer_btn {
+                        margin-bottom: 10px;
+                    }
+
+                    .main_text_price2 {
+                        margin-top: 20px;
+                    }
+                }
+
+            .footer_nav {
+                padding: 32px 20px 32px 20px;
+        
+        }
+    }
+   
+
+}
+
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 26px;
+    }
+    
+    .header_content_text {
+        font-size: 14px;
+    }
+
+    .btn_header_content_main,
+    .btn_header_content {
+            width: 100px;
+            height: 30px;
+            font-size: 12px;
+        }
+
+    .main_text {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
+

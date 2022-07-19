@@ -4,6 +4,10 @@ body {
   font-size: 14px;
 }
 
+.wrapper {
+  padding: 18px 165px 32px 165px;
+}
+
 .header {
   width: 100%;
   max-height: 1110px;
@@ -84,13 +88,12 @@ body {
 .header_content_img {
   width: 85%;
   position: absolute;
-  top: -55px;
-  right: -110px;
+  top: -65px;
+  right: -165px;
 }
 
 main {
-  margin-top: 500px;
-  margin-bottom: 150px;
+  margin-top: 200px;
 }
 
 .main_head_text {
@@ -116,7 +119,6 @@ h2 {
 }
 
 .main_head_img {
-  margin-left: 50px;
   margin-top: 110px;
 }
 
@@ -145,81 +147,104 @@ h2 {
   margin-top: 40px;
 }
 
-footer {
-  margin: 0px;
-  padding: 0px;
+footer .footer_main {
+  background: url(../img/footer\ background-min.svg);
 }
-
-.footer_main {
-  background: url(../img/footer\ background-min.svg) no-repeat 100%;
+footer .footer_main h2 {
+  margin-top: 135px;
 }
-.footer_main h2 {
-  margin-top: 235px;
-}
-.footer_main .main_text {
+footer .footer_main .main_text {
   max-width: 600px;
   margin-bottom: 35px;
 }
-.footer_main .price {
+footer .footer_main .price {
   color: #222F65;
   font-weight: 500;
   font-size: 50px;
   line-height: 66px;
   margin: 0px;
 }
-.footer_main .main_text_price {
+footer .footer_main .main_text_price {
   color: #37447E;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
 }
-.footer_main .main_text_price2 {
+footer .footer_main .main_text_price2 {
   color: #5D6970;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   margin: 60px auto 10px auto;
 }
-.footer_main .footer_btn {
+footer .footer_main .footer_btn {
   margin-bottom: 175px;
 }
-
-@media screen and (max-width: 1400px) {
-  main {
-    margin-top: 270px;
-  }
-  .main_head_img {
-    margin-left: 0px;
-    margin-top: 80px;
-    max-width: 350px;
-  }
+footer .footer_nav {
+  background: #E7ECFF;
+  padding: 68px 165px 32px 165px;
 }
+footer .footer_nav .footer_nav_copy {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #CDD1D4;
+}
+footer .footer_nav .footer_nav_copy p {
+  color: #939EA4;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .footer_nav .footer_nav_copy .footer_nav_button {
+  width: 109px;
+  height: 26px;
+}
+footer .footer_nav .footer_nav_menu {
+  padding-top: 20px;
+}
+footer .footer_nav .footer_nav_menu li {
+  list-style: none;
+}
+footer .footer_nav .footer_nav_menu li a {
+  text-decoration: none;
+}
+footer .footer_nav .footer_nav_menu .footer_nav a {
+  color: #929ECC;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 @media screen and (max-width: 1200px) {
   main {
-    margin-top: 50px;
-    padding-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-top: 0px;
   }
-  .main_head {
+  main .main_head {
     padding-bottom: 10px;
   }
-  .main_text {
-    margin-bottom: 30px;
-  }
-  .main_head_text {
+  main .main_head .main_head_text {
     max-width: 100%;
     margin-top: 0px;
     padding-top: 0px;
   }
-  .main_content_card_img {
+  main .main_head .main_head_text h2 {
+    margin-top: 50px;
+  }
+  main .main_head .main_head_text .main_text {
+    margin-bottom: 30px;
+  }
+  main .main_content_card_img {
     max-width: 100%;
     align-items: center;
-    margin-left: 10px;
   }
 }
 @media screen and (max-width: 990px) {
+  .wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .header_content_main {
-    width: 100%;
+    max-width: 100%;
     margin: 50px 0px 10px auto;
   }
   .header_content_main h1 {
@@ -233,27 +258,46 @@ footer {
     width: 0px;
     display: none;
   }
+  .main_content {
+    margin-bottom: 5px;
+  }
   .main_head_img {
     display: none;
   }
-}
-@media screen and (max-width: 768px) {
-  main {
-    margin-top: 20px;
+  footer .footer_main {
     padding-top: 0px;
+    margin-top: 0px;
   }
-  .main_head_text h2 {
-    margin-top: 50px;
+  footer .footer_main h2 {
+    margin-top: 10px;
+  }
+  footer .footer_main .footer_btn {
+    margin-bottom: 10px;
+  }
+  footer .footer_main .main_text_price2 {
+    margin-top: 20px;
+  }
+  footer .footer_nav {
+    padding: 32px 20px 32px 20px;
   }
 }
 @media screen and (max-width: 520px) {
+  h1 {
+    font-size: 26px;
+  }
+  .header_content_text {
+    font-size: 14px;
+  }
   .btn_header_content_main,
 .btn_header_content {
     width: 100px;
     height: 30px;
     font-size: 12px;
   }
-  .main_text_price2 {
-    margin-top: 10px;
+  .main_text {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 23px;
   }
 }/*# sourceMappingURL=styles.css.map */
