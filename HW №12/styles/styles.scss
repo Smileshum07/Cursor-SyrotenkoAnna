@@ -18,6 +18,8 @@ $footerIconsColor: #B0B8BC;
 
 
 
+
+
 @mixin style ($color,$font-weight,$font-size,$line-height) {
     color: $color;
     font-weight: $font-weight;
@@ -33,7 +35,11 @@ body {
     
 }
 
+.wrapper {
+    padding: 18px $mainPadding 32px $mainPadding;
+}
 
+//header
 
 .header {
     width: 100%;
@@ -110,14 +116,17 @@ body {
 .header_content_img {
     width: 85%;
     position: absolute;
-    top: -55px;
-    right: -110px;
+    top: -65px;
+    right: -165px;
     
 }
 
+
+//main
+
 main {
-    margin-top: 500px;
-    margin-bottom: 150px;
+    margin-top: 200px;
+    
 }
 
 
@@ -138,7 +147,6 @@ main {
 
 
 .main_head_img {
-    margin-left: 50px;
     margin-top: 110px;
 }
 
@@ -165,96 +173,119 @@ main {
     margin-top: 40px;
 }
 
+//footer
+
 footer {
     
-    margin: 0px;
-    padding: 0px;
-}
-
-.footer_main {
     
-    
-    background: url(../img/footer\ background-min.svg) no-repeat 100%;
-   
-
-    h2 {
-        margin-top: 235px;
-    }
-
-    .main_text {
-        max-width: 600px;
-        margin-bottom: 35px;
-    }
-    .price {
-        @include style (#222F65, 500, 50px, 66px);
-        margin: 0px;
-    }
-    .main_text_price {
-        @include style (#37447E, 400, 16px, 26px);
-    }
-    .main_text_price2 {
-        @include style (#5D6970, 400, 14px, 24px);
-        margin: 60px auto 10px auto;
-    }
-
-    .footer_btn {
-        margin-bottom: 175px;
-    }
-   
-}
-
-.footer_nav {
-    
-}
-
-
-@media screen and (max-width: 1400px) {
-    main {
-        margin-top: 270px;
-    
+    .footer_main {
+        background: url(../img/footer\ background-min.svg);
+        
+        h2 {
+            margin-top: 135px;
         }
-        .main_head_img {
-            margin-left: 0px;
-            margin-top: 80px;
-            max-width: 350px;
+
+        .main_text {
+            max-width: 600px;
+            margin-bottom: 35px;
         }
+        .price {
+            @include style (#222F65, 500, 50px, 66px);
+            margin: 0px;
+        }
+        .main_text_price {
+            @include style (#37447E, 400, 16px, 26px);
+        }
+        .main_text_price2 {
+            @include style (#5D6970, 400, 14px, 24px);
+            margin: 60px auto 10px auto;
+        }
+
+        .footer_btn {
+            margin-bottom: 175px;
+        }
+    
+    }
+
+
+    .footer_nav {
+        background: $footerBacgroundColor;
+        padding: 68px $mainPadding 32px $mainPadding;
+
+        .footer_nav_copy {
+            padding-bottom: 40px;
+            border-bottom: 1px solid #CDD1D4;
+            p {
+                @include style (#939EA4, 500, 14px, 24px);
+            }
+
+            .footer_nav_button {
+                width: 109px;
+                height: 26px;
+            }
+        }
+
+        .footer_nav_menu {
+            padding-top: 20px;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            .footer_nav {
+                a {
+                    @include style (#929ECC, 400, 14px, 24px);
+                }
+            }
+        }
+    }
 }
+
+
+
 
 @media screen and (max-width: 1200px) {
     main {
-        margin-top: 50px;
-        padding-top: 10px;
-        margin-bottom: 50px;
-    }
+            margin-top: 20px;
+            padding-top: 0px;
 
-    .main_head {
-        padding-bottom: 10px;
-    }
+            .main_head {
+                    padding-bottom: 10px;
 
-    .main_text {
-        margin-bottom: 30px
-    }
+                    .main_head_text {
+                        max-width: 100%;
+                        margin-top: 0px;
+                        padding-top: 0px;
+                            h2 {
+                                margin-top: 50px;
+                            }
+                            .main_text {
+                                margin-bottom: 30px
+                            }
+                        }
+                    
+            }
 
-    
-    .main_head_text {
-        max-width: 100%;
-        margin-top: 0px;
-        padding-top: 0px;
-    }
+            .main_content_card_img {
+                    max-width: 100%;
+                    align-items: center;
+            
+            }
 
-    .main_content_card_img {
-        max-width: 100%;
-        align-items: center;
-        margin-left: 10px;
     }
-             
 }
 
 @media screen and (max-width: 990px) {
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     
-.header_content_main {
-    width: 100%;
-        
+    .header_content_main {
+        max-width: 100%;
         margin: 50px 0px 10px auto;
 
         h1 {
@@ -272,41 +303,66 @@ footer {
         display: none;
     }
 
+    .main_content {
+        margin-bottom: 5px;
+    }
+
     .main_head_img {
         display: none;
     
    }
    
-       
+    
+        footer {
+            .footer_main {
+            
+                    padding-top: 0px;
+                    margin-top: 0px;
+            
+                    h2 {
+                        margin-top: 10px;
+                    }
+            
+                    .footer_btn {
+                        margin-bottom: 10px;
+                    }
+
+                    .main_text_price2 {
+                        margin-top: 20px;
+                    }
+                }
+
+            .footer_nav {
+                padding: 32px 20px 32px 20px;
+        
+        }
+    }
+   
+
 }
 
-
-
-@media screen and (max-width: 768px) {
-    main {
-            margin-top: 20px;
-            padding-top: 0px;
-    }        
-          .main_head_text {
-            h2 {
-                margin-top: 50px;
-             }
-        }
-        }
-
-
 @media screen and (max-width: 520px) {
+    h1 {
+        font-size: 26px;
+    }
     
-    
+    .header_content_text {
+        font-size: 14px;
+    }
+
     .btn_header_content_main,
-        .btn_header_content {
+    .btn_header_content {
             width: 100px;
             height: 30px;
             font-size: 12px;
         }
 
-    .main_text_price2 {
-        margin-top: 10px;
+    .main_text {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 23px;
     }
 }
 
