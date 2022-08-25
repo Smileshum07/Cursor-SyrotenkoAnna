@@ -1,0 +1,120 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Arodora Pro";
+  font-weight: 300, 400, 600, 700;
+  src: url(./font/ArodoraPro-Light.ttf);
+}
+@font-face {
+  font-family: "NEXT ART";
+  font-weight: 300, 400, 600, 700;
+  src: url(./font/NEXT\ ART_Regular.ttf);
+}
+body {
+  max-width: 100%;
+  height: auto;
+  font-family: "Arodora Pro";
+}
+
+header {
+  background: #2A2A2A;
+}
+
+.header__nav__manu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 305px;
+  padding-right: 305px;
+}
+
+.header__nav__manu_logo {
+  list-style: none;
+}
+
+.header__nav__manu_link {
+  list-style: none;
+}
+.header__nav__manu_link a {
+  text-decoration: none;
+  color: #E4E4E4;
+  font-family: "Arodora Pro";
+  font-size: 18px;
+  font-weight: 300px;
+}
+
+li:nth-child(2) {
+  border-bottom: 1px solid #E2A300;
+}
+
+.header__main {
+  display: flex;
+  padding-left: 305px;
+}
+
+.header__main_info {
+  width: 32%;
+  padding-top: 200px;
+  padding-bottom: 142px;
+}
+.header__main_info h1 {
+  font-family: "NEXT ART";
+  font-size: 72px;
+  font-weight: 700px;
+  color: #FFFFFF;
+}
+.header__main_info span {
+  font-family: "NEXT ART";
+  font-size: 48px;
+  font-weight: 600px;
+  color: #FFFFFF;
+}
+.header__main_info div {
+  font-size: 18px;
+  font-weight: 300px;
+  color: #E4E4E4;
+  margin-bottom: 27px;
+}
+.header__main_info button {
+  width: 200px;
+  height: 47px;
+  font-family: "NEXT ART";
+  background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+  box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+  border-radius: 6px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700px;
+}
+
+.header__main_img {
+  width: 75%;
+  height: auto;
+  background: url(./img/Gleb.png) no-repeat right top;
+  background-size: 100% 125%;
+}
+
+.main__icons {
+  display: flex;
+  justify-content: center;
+  padding: 113px 305px 90px 305px;
+  background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+  flex-wrap: wrap;
+}
+
+.main__icons_icon {
+  width: 200px;
+  height: 200px;
+  display: block;
+  justify-content: center;
+  background: #2A2A2A;
+  border-radius: 29px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}/*# sourceMappingURL=style.css.map */

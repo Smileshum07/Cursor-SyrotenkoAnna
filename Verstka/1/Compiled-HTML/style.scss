@@ -1,0 +1,166 @@
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+   
+@font-face {
+    font-family: "Arodora Pro";
+    font-weight: 300,400,600,700;
+    src: url(./font/ArodoraPro-Light.ttf);
+}
+
+@font-face {
+    font-family: "NEXT ART";
+    font-weight: 300,400,600,700;
+    src: url(./font/NEXT\ ART_Regular.ttf);
+}
+
+
+
+
+//font-family
+    $mainFontFamily: "Arodora Pro";
+    $hFontFamily:"NEXT ART";
+//font weight
+    $mainWeight: 300px;
+
+    $hWeightS: 400px;
+    $hWeightM: 700px;
+//font size
+    $mainFontSizeS: 18px;
+    $mainFontSizeM: 20px;
+    $mainFontSizeL: 24px;
+
+    $hFontSizeS: 48px;
+    $hFontSizeM: 72px;
+
+//color
+    $mainColor: #E4E4E4;
+    $hColor: #FFFFFF;
+    $buttonColor: #000000;
+    $svgColor: #00C4F0;
+
+//background
+    $mainBacground: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    $headerBacground: #2A2A2A;
+    $buttonBacground: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);    
+
+//main padding
+    $mainPadding: 305px;
+    
+
+body {
+   max-width: 100%; 
+   height: auto;
+   font-family: $mainFontFamily;
+}   
+
+header {
+    background: $headerBacground;
+}
+.header__nav__manu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: $mainPadding;
+    padding-right: $mainPadding;
+    
+}
+.header__nav__manu_logo {
+            list-style: none;
+}
+
+.header__nav__manu_link {
+    list-style: none;
+
+         a {
+            text-decoration: none;
+            color: $mainColor;
+            font-family: $mainFontFamily;
+            font-size: $mainFontSizeS;
+            font-weight: $mainWeight;
+        }
+            
+}
+
+        
+li:nth-child(2){
+    border-bottom: 1px solid #E2A300;
+}
+
+.header__main {
+    display: flex;
+    padding-left: $mainPadding;
+    
+}
+
+.header__main_info {
+    width: 32%;
+    padding-top: 200px;
+    padding-bottom: 142px;
+
+    h1 {
+        font-family: $hFontFamily;
+        font-size: $hFontSizeM;
+        font-weight: $hWeightM;
+        color: $hColor;
+    }
+
+    span {
+        font-family: $hFontFamily;
+        font-size: $hFontSizeS;
+        font-weight: 600px;
+        color: $hColor;
+    }
+
+    div {
+        font-size: $mainFontSizeS;
+        font-weight: $mainWeight;
+        color: $mainColor;
+        margin-bottom: 27px;
+    }
+
+    button {
+        width: 200px;
+        height: 47px;
+        font-family: $hFontFamily;
+        background: $buttonBacground;
+        box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+        border-radius: 6px;
+        color: $buttonColor;
+        font-size: $mainFontSizeS;
+        font-weight: $hWeightM;
+    }
+
+}
+
+.header__main_img  {
+    width: 75%;
+    height: auto;
+    background: url(./img/Gleb.png) no-repeat right top;
+    background-size: 100% 125%;
+}
+
+.main__icons {
+    display: flex;
+    justify-content: center;
+    padding: 113px $mainPadding 90px $mainPadding;
+    background: $mainBacground;
+    flex-wrap: wrap;
+}
+
+.main__icons_icon {
+    width: 200px;
+    height: 200px;
+    display: block;
+    justify-content: center;
+    background: $headerBacground;
+    border-radius: 29px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
